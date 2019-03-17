@@ -1,4 +1,4 @@
-a
+export const italianWords = `a
 abate
 abati
 abbagli
@@ -33878,7 +33878,7 @@ pitturiate
 pitturino
 pitturo
 piu
-piu`
+piu
 piuma
 piume
 piumini
@@ -34020,7 +34020,7 @@ plusvalore
 plusvalori
 pneumatici
 pneumatico
-po`
+po
 poca
 poche
 pochi
@@ -60450,5 +60450,4 @@ zuffolo
 zuppa
 zuppe
 zuppiera
-zuzzurellone
-
+zuzzurellone`;
