@@ -18,18 +18,27 @@ const styles = StyleSheet.create({
     fontSize: 46,
     fontWeight: "bold",
     color: "#ffffff"
+  },
+  textShadow: {
+    textShadowColor: "rgba(0, 0, 0, 0.75)",
+    textShadowOffset: { width: 0, height: 1 },
+    textShadowRadius: 10
   }
 });
 
 export interface NicknameViewProps {
   nickname: string;
+  onImage: boolean;
 }
 
 export function NicknameView(props: NicknameViewProps) {
+  const style = (s: any) =>
+    props.onImage ? { ...s, ...styles.textShadow } : s;
+
   return (
     <View style={styles.view}>
-      <Text style={styles.labelText}>Hey,</Text>
-      <Text style={styles.nicknameText}>{props.nickname}!</Text>
+      <Text style={style(styles.labelText)}>Hey,</Text>
+      <Text style={style(styles.nicknameText)}>{props.nickname}!</Text>
     </View>
   );
 }

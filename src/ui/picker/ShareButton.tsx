@@ -54,11 +54,9 @@ export function ShareButton(props: Props) {
   };
 
   return (
-    <TouchableOpacity style={styles.button} {...props}>
+    <TouchableOpacity style={styles.button} {...props} onPress={onShare}>
       <LinearGradient colors={["#435ddd", "#435ddd"]} style={styles.gradient}>
-        <Text style={styles.buttonText} onPress={onShare}>
-          Condividi...
-        </Text>
+        <Text style={styles.buttonText}>Condividi...</Text>
       </LinearGradient>
     </TouchableOpacity>
   );

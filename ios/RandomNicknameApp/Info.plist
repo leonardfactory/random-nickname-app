@@ -35,6 +35,10 @@
 	<string></string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Pinolo vorrebbe una tua foto perché sei bella</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Pinolo vorrebbe salvare le tue bellissime foto</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

@@ -1,9 +1,16 @@
 import * as React from "react";
-import { NavigatorIOS } from "react-native";
+import { NavigatorIOS, Picker } from "react-native";
 import { PickerScene } from "../picker/PickerScene";
+import { createStackNavigator } from "react-navigation";
+import { CameraScene } from "../camera/CameraScene";
 
-export interface AppNavigationProps {}
-
-export function AppNavigation(props: AppNavigationProps) {
-  return <PickerScene />;
-}
+export const AppNavigation = createStackNavigator(
+  {
+    Picker: PickerScene,
+    Camera: CameraScene
+  },
+  {
+    headerMode: "none",
+    mode: "modal"
+  }
+);

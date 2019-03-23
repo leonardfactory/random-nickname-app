@@ -6,10 +6,15 @@ target 'RandomNicknameApp' do
   pod 'React', :path => '../node_modules/react-native', :subspecs => [
     'DevSupport',
     'RCTLinkingIOS',
-    'RCTImage'
+    'RCTImage',
+    'RCTWebSocket', # Needed for debugging
+    'RCTAnimation'
   ]
   
   pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+  pod 'react-native-camera', path: '../node_modules/react-native-camera'
+
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
 end
 
